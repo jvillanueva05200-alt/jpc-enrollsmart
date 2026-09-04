@@ -1,0 +1,14 @@
+{
+  "name": "JPC EnrollSmart",
+  "short_name": "EnrollSmart",
+  "description": "John Paul College Enrollment Appointment & Monitoring System",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F3F6FC",
+  "theme_color": "#0B2E59",
+  "icons": [
+    {"src": "./image.png", "sizes": "any", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
