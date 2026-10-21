@@ -1,0 +1,22 @@
+{
+  "name": "jpc-enrollsmart-workspace",
+  "version": "2.1.0",
+  "private": true,
+  "description": "JPC ENROLLSMART monorepo with React.js, Firebase, Express.js and PWA support.",
+  "workspaces": [
+    "ENROLLSMART SYSTEM 2026",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "dev": "npm --workspace \"ENROLLSMART SYSTEM 2026\" run dev",
+    "build": "npm --workspace \"ENROLLSMART SYSTEM 2026\" run build",
+    "start": "npm run build && node backend/server.js",
+    "backend": "npm --workspace \"backend\" run start",
+    "backend:dev": "npm --workspace \"backend\" run dev",
+    "hash-password": "npm --workspace \"backend\" run hash-password"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

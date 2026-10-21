@@ -1,0 +1,30 @@
+{
+  "name": "enrollsmart-backend",
+  "version": "1.0.0",
+  "description": "Express.js REST API backend for JPC ENROLLSMART, with JWT authentication, role-based access control, and hashed admin credentials.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "hash-password": "node scripts/hash-password.js"
+  },
+  "keywords": [
+    "enrollsmart",
+    "express",
+    "backend",
+    "api",
+    "enrollment"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^7.1.0",
+    "firebase-admin": "^13.5.0"
+  }
+}
